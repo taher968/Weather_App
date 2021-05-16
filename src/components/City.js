@@ -1,5 +1,6 @@
 import React from 'react'
-import { Loader } from "@googlemaps/js-api-loader"
+import Weather from './Weather'
+
 
 
 const City = ({ city }) => {
@@ -20,7 +21,8 @@ const City = ({ city }) => {
             <h3> Minimum: {tempMin} °C</h3>
             <h3> Maximum: {tempMax} °C</h3>
             <h3> Feels Like: {feelsLike} °C</h3>
-            <h3> Weather: {weather}</h3>
+            <Weather weather={weather} />
+
 
 
         </div>
